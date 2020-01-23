@@ -25,19 +25,23 @@ form{
 }
 label{
   padding: 10px 0px;
+  font-size: 18px;
 }
 input[type="text"]{
   margin: 10px 0px 10px 10px;
   align-self: right;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid rgb(165, 164, 164);
 }
 #name{
-  width: 250px;
+  width: 252px;
 }
 #position{
   width: 236px;
 }
 #phone{
-  width: 185px;
+  width: 178px;
 }
 .submit-btn{
   padding: 10px 46px;

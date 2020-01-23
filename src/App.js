@@ -33,6 +33,7 @@ class App extends Component{
         <header className="App-header">
           Explanation here
         </header>
+        <p>Or explanation here. Or both. Whatever.</p>
         <form onSubmit={(e)=>this.handleSubmit(e)}>
           <label>
             Name:
