@@ -23,7 +23,90 @@ form{
   align-items: left;
   padding: 30px;
 }
-label{
+
+/** Form Style from sanwebe.com */
+.form-style-2{
+	max-width: 800px;
+	padding: 20px 12px 10px 20px;
+	font: 13px Arial, Helvetica, sans-serif;
+}
+.form-style-2-heading{
+	font-weight: bold;
+	font-style: italic;
+	border-bottom: 2px solid #ddd;
+	margin-bottom: 20px;
+	font-size: 15px;
+	padding-bottom: 3px;
+}
+.form-style-2 label{
+	display: block;
+	margin: 0px 0px 15px 0px;
+}
+.form-style-2 label > span{
+	width: 300px;
+	font-weight: bold;
+	float: left;
+	padding-top: 8px;
+	padding-right: 5px;
+}
+.form-style-2 span.required{
+	color:red;
+}
+.form-style-2 .tel-number-field{
+	width: 40px;
+	text-align: center;
+}
+.form-style-2 input.input-field, .form-style-2 .select-field{
+	width: 100%;	
+}
+.form-style-2 input.input-field, 
+.form-style-2 .tel-number-field, 
+.form-style-2 .textarea-field, 
+ .form-style-2 .select-field{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	border: 1px solid #C2C2C2;
+	box-shadow: 1px 1px 4px #EBEBEB;
+	-moz-box-shadow: 1px 1px 4px #EBEBEB;
+	-webkit-box-shadow: 1px 1px 4px #EBEBEB;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	padding: 7px;
+	outline: none;
+}
+.form-style-2 .input-field:focus, 
+.form-style-2 .tel-number-field:focus, 
+.form-style-2 .textarea-field:focus,  
+.form-style-2 .select-field:focus{
+	border: 1px solid #3abff0;
+}
+.form-style-2 .textarea-field{
+	height:100px;
+	width: 80%;
+}
+.form-style-2 input[type=submit],
+.form-style-2 input[type=button]{
+	border: none;
+	padding: 8px 15px 8px 15px;
+	background: #3abff0;
+	color: #fff;
+	box-shadow: 1px 1px 4px #DADADA;
+	-moz-box-shadow: 1px 1px 4px #DADADA;
+	-webkit-box-shadow: 1px 1px 4px #DADADA;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+}
+.form-style-2 input[type=submit]:hover,
+.form-style-2 input[type=button]:hover{
+	background: #3abff0;
+	color: #fff;
+}
+/** End of Form Style from sanwebe.com */
+
+/* label{
   padding: 10px 0px;
   font-size: 18px;
 }
@@ -42,7 +125,7 @@ input[type="text"]{
 }
 #phone{
   width: 178px;
-}
+} */
 .submit-btn{
   padding: 10px 46px;
   border: none;
@@ -58,12 +141,13 @@ input[type="text"]{
 }
 
 .submit-btn:hover{
-  background-color: #3abff0;
+  background-color: #516670;
 }
-.display-none{
+ .display-none{
   display: none;
 }
 
+/*
 .display-name{
   color: #00aeef;
   font-size: 28px;
@@ -77,12 +161,192 @@ input[type="text"]{
   font-size: 12px;
   font-weight: 300
 }
+
+} */
+
+
+/**
+Beginning of signature CSS
+**/
+@import url('https://vayyar.s3.eu-central-1.amazonaws.com/alvaressentialalt-medium-webfont.woff');
+@import url('https://vayyar.s3.eu-central-1.amazonaws.com/alvaressentialalt-semiboldit-webfont.woff');
+
+@font-face {
+  font-family: AlvarEssentialAlt-Medium;
+  src: url('https://vayyar.s3.eu-central-1.amazonaws.com/alvaressentialalt-medium-webfont.woff');
+
+}
+
+@font-face {
+  font-family: AlvarEssentialAlt-SemiBold;
+  src: url('https://vayyar.s3.eu-central-1.amazonaws.com/alvaressentialalt-semiboldit-webfont.woff');
+}
+
+.presentational-container {
+  padding: 10px;
+  box-shadow: 2px 2px 10px 5px;
+  background-color: #fff;
+}
+
+table {
+  background: none;
+  margin: 0;
+  padding: 0px 0px 0 0;
+  border-width: 0 0 0 0;
+  border-style: solid;
+  border-color: #516670;
+}
+
+/* tr.outer-row td.logo-cell {
+  padding: 0 1px 0 0;
+}
+
+.logo {
+  height: 100px;
+}
+
+span.logo-cell a {
+  text-decoration: none;
+}
+
+span.logo-cell img {
+  vertical-align: middle;
+  width: 100px;
+  height: 28px;
+  padding-bottom: 7px;
+  padding-top: 0px;
+  padding-left: 3px;
+  padding-right: 10px;
+}
+
+.social-icons ul {
+  list-style: none;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin: 0;
+  height: 15px;
+}
+
+span.social-icons {
+  position: relative;
+  bottom: 0;
+  vertical-align: bottom;
+  padding-top: 5px;
+}
+
+span.social-icons li {
+  display: inline-block;
+}
+
+span.social-icons a {
+  text-decoration: none;
+}
+
+span.social-icons img {
+  width: 15px;
+  padding-top: 3px;
+  padding-left: 2px;
+  padding-right: 4px;
+  color: #516670;
+} */
+
+
+.left-cell {
+  border-left:none;
+  border-top:none;
+  border-bottom:none;
+  padding-right:7px;
+  /* border-right:solid 3px;
+  border-color:#009DDD; */
+  width:145px;
+}
+.img-logo{
+  width:145px;
+  border-radius:0;
+  padding-left: 10px;
+
+}
+.social-icons {
+
+  display: inline-block;
+  margin-right: 4px;
+}
+img.social{
+  padding-left: 5px;
+  padding-right: 5px;
+  border-left: 1px solid #009DDD;
+  height: 20px;
+}
+img.social-odd{
+  padding-left: 5px;
+  padding-right: 5px;
+  height: 20px;
+}
+
+td.description-cell {
+  padding: 0 0 0 12px;
+  border-left: 0.5px solid #516670;
+}
+
+td.description-cell table {
+  background: none;
+  border: 0px;
+  margin: 0;
+  padding: 0;
+}
+
+td.display-name {
+  color: #009DDD;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: AlvarEssentialAlt-SemiBold, sans-serif;
+}
 .lighter{
-  font-weight: 400 !important
+  font-weight: 400 !important;
+  font-weight: bold;
 }
 .smaller{
-  font-size: 24px !important;
+  font-size: 25px !important;
+  font-weight: bold;
 }
 .smallest{
   font-size: 20px !important;
+  font-weight: bold;
+}
+
+td.display-position {
+  color: #516670;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: AlvarEssentialAlt-Medium, sans-serif;
+}
+
+td.display-number {
+  padding-bottom: 0px;
+  vertical-align: bottom;
+    color: #516670;
+  font-size: 12px;
+  font-family: AlvarEssentialAlt-Medium, sans-serif;
+}
+
+td.website a {
+  color: #4BAFDB;
+  text-decoration: none;
+  font-weight: normal;
+
+  font-size: 14px;
+}
+
+li.colored {
+  border-left: 0.5px solid #009DDD;
+  opacity: 1;
+  padding-left: 5px;
+}
+
+li.last {
+  padding-right: 10px;
+}
+
+.CopyPane {
+  padding-top: 20px;
 }
