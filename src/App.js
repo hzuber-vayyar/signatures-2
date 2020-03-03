@@ -10,6 +10,7 @@ class App extends Component {
       name: "",
       position: "",
       phone: "",
+      email: "",
       submitted: false,
       gmail: false,
       outlook: false
@@ -106,8 +107,19 @@ class App extends Component {
                 type="text"
                 className="input-field"
                 id="phone"
-                placeholder="(Example: 58-5551234):"
+                placeholder="Example: 58-5551234"
                 value={this.state.number}
+                onChange={e => this.handleChange(e)}
+              />
+            </label>
+            <label htmlFor="email">
+              <span>Email address:</span>
+              <input
+                type="text"
+                className="input-field"
+                id="email"
+                placeholder="johnny.vayyaroni@vayyar.com:"
+                value={this.state.email}
                 onChange={e => this.handleChange(e)}
               />
             </label>
@@ -141,6 +153,7 @@ class App extends Component {
               phone={number.length > 7 ? "M: +972-" + displayNumber : ""}
               name={toTitleCase(this.state.name)}
               position={toTitleCase(this.state.position)}
+              email={this.state.email}
             />
           </div>
         )}
@@ -150,6 +163,7 @@ class App extends Component {
               phone={number.length > 7 ? "M: +972-" + displayNumber : ""}
               name={toTitleCase(this.state.name)}
               position={toTitleCase(this.state.position)}
+              email={this.state.email}
             />
           </div>
         )}

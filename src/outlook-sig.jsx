@@ -8,7 +8,7 @@ import outlook5 from "./outlook-type-sig.webp";
 import Card from './outlook-sig2'
 
 function OUTLOOK_SIG(props) {
-  const { name, phone, position } = props;
+  const { name, phone, position, email } = props;
   const length = name.length;
   const size =
     length < 25 ? "font-regular" : length < 40 ? "smaller" : "smallest";
@@ -16,7 +16,7 @@ function OUTLOOK_SIG(props) {
   return (
     <>
       <div className={`presentational-container outlook`} id="copied">
-          <Card name={name} phone={phone} position={position}/>
+          <Card name={name} phone={phone} position={position} email={email}/>
         {/*<table role="presentation">
           <tbody>
             <tr className="outer-row">
