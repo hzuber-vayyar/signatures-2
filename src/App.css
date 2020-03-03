@@ -1,4 +1,3 @@
-
 .App-header {
   background-color: #282c34;
   min-height: 10vh;
@@ -10,12 +9,12 @@
   color: white;
   width: 100%;
 }
-.App{
+.App {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-form{
+form {
   display: flex;
   flex-direction: column;
   justify-content: left;
@@ -25,66 +24,67 @@ form{
 }
 
 /** Form Style from sanwebe.com */
-.form-style-2{
-	max-width: 800px;
-	padding: 20px 12px 10px 20px;
-	font: 13px Arial, Helvetica, sans-serif;
+.form-style-2 {
+  max-width: 800px;
+  padding: 20px 12px 10px 20px;
+  font: 13px Arial, Helvetica, sans-serif;
 }
-.form-style-2-heading{
-	font-weight: bold;
-	border-bottom: 2px solid #ddd;
-	margin-bottom: 20px;
-	font-size: 15px;
-	padding-bottom: 3px;
+.form-style-2-heading {
+  font-weight: bold;
+  border-bottom: 2px solid #ddd;
+  margin-bottom: 20px;
+  font-size: 15px;
+  padding-bottom: 3px;
 }
-.form-style-2 label{
-	display: block;
-	margin: 0px 0px 15px 0px;
+.form-style-2 label {
+  display: block;
+  margin: 0px 0px 15px 0px;
 }
-.form-style-2 label > span{
-	width: 300px;
-	font-weight: bold;
-	float: left;
-	padding-top: 8px;
+.form-style-2 label > span {
+  width: 300px;
+  font-weight: bold;
+  float: left;
+  padding-top: 8px;
   padding-right: 5px;
-  margin-bottom: 5px;;
+  margin-bottom: 5px;
 }
-.form-style-2 span.required{
-	color:red;
+.form-style-2 span.required {
+  color: red;
 }
-.form-style-2 .tel-number-field{
-	width: 40px;
-	text-align: center;
+.form-style-2 .tel-number-field {
+  width: 40px;
+  text-align: center;
 }
-.form-style-2 input.input-field, .form-style-2 .select-field{
-	width: 100%;	
+.form-style-2 input.input-field,
+.form-style-2 .select-field {
+  width: 100%;
 }
-.form-style-2 input.input-field, 
-.form-style-2 .tel-number-field, 
-.form-style-2 .textarea-field, 
- .form-style-2 .select-field{
-	box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	border: 1px solid #C2C2C2;
-	box-shadow: 1px 1px 4px #EBEBEB;
-	-moz-box-shadow: 1px 1px 4px #EBEBEB;
-	-webkit-box-shadow: 1px 1px 4px #EBEBEB;
-	border-radius: 3px;
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	padding: 7px;
-	outline: none;
+.form-style-2 input.input-field,
+.form-style-2 .tel-number-field,
+.form-style-2 .textarea-field,
+.form-style-2 .select-field {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  border: 1px solid #c2c2c2;
+  box-shadow: 1px 1px 4px #ebebeb;
+  -moz-box-shadow: 1px 1px 4px #ebebeb;
+  -webkit-box-shadow: 1px 1px 4px #ebebeb;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  padding: 7px;
+  outline: none;
 }
-.form-style-2 .input-field:focus, 
-.form-style-2 .tel-number-field:focus, 
-.form-style-2 .textarea-field:focus,  
-.form-style-2 .select-field:focus{
-	border: 1px solid #3abff0;
+.form-style-2 .input-field:focus,
+.form-style-2 .tel-number-field:focus,
+.form-style-2 .textarea-field:focus,
+.form-style-2 .select-field:focus {
+  border: 1px solid #3abff0;
 }
-.form-style-2 .textarea-field{
-	height:100px;
-	width: 80%;
+.form-style-2 .textarea-field {
+  height: 100px;
+  width: 80%;
 }
 /** End of Form Style from sanwebe.com */
 
@@ -108,27 +108,35 @@ input[type="text"]{
 #phone{
   width: 178px;
 } */
-.submit-btn{
-  padding: 10px 46px;
+.submit-btn {
+  text-align: center;
+  margin: 0px 5px;
+  font-size: 16px;
+  padding: 8px 20px;
   border: none;
-  font-size: 18px;
-  margin: 5px auto;
   text-transform: uppercase;
   background-color: #00aeef;
   border-radius: 50px;
   cursor: pointer;
   color: #fff;
-  transition: all .2s;
+  transition: all 0.2s;
   align-self: center;
-	box-shadow: 1px 1px 4px #DADADA;
-	-moz-box-shadow: 1px 1px 4px #DADADA;
-	-webkit-box-shadow: 1px 1px 4px #DADADA;
+  box-shadow: 1px 1px 4px #dadada;
+  -moz-box-shadow: 1px 1px 4px #dadada;
+  -webkit-box-shadow: 1px 1px 4px #dadada;
+  flex: 1 1 0;
+  max-width: 100px;
 }
 
-.submit-btn:hover{
+.submit-btn:hover {
   background-color: #516670;
 }
- .display-none{
+.submit-btn-container {
+  display: flex;
+  margin-top: 15px;
+  justify-content: center;
+}
+.display-none {
   display: none;
 }
 
@@ -149,29 +157,33 @@ input[type="text"]{
 
 } */
 
-
 /**
 Beginning of signature CSS
 **/
-@import url('https://vayyar.s3.eu-central-1.amazonaws.com/alvaressentialalt-medium-webfont.woff');
-@import url('https://vayyar.s3.eu-central-1.amazonaws.com/alvaressentialalt-semiboldit-webfont.woff');
+@import url("https://vayyar.s3.eu-central-1.amazonaws.com/alvaressentialalt-medium-webfont.woff");
+@import url("https://vayyar.s3.eu-central-1.amazonaws.com/alvaressentialalt-semiboldit-webfont.woff");
 
 @font-face {
   font-family: AlvarEssentialAlt-Medium;
-  src: url('https://vayyar.s3.eu-central-1.amazonaws.com/alvaressentialalt-medium-webfont.woff');
-
+  src: url("https://vayyar.s3.eu-central-1.amazonaws.com/alvaressentialalt-medium-webfont.woff");
 }
 
 @font-face {
   font-family: AlvarEssentialAlt-SemiBold;
-  src: url('https://vayyar.s3.eu-central-1.amazonaws.com/alvaressentialalt-semiboldit-webfont.woff');
+  src: url("https://vayyar.s3.eu-central-1.amazonaws.com/alvaressentialalt-semiboldit-webfont.woff");
 }
 
 .presentational-container {
   padding: 10px;
-  box-shadow: 2px 2px 10px 5px;
   background-color: #fff;
   margin: 5px auto 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.outer-table {
+  box-shadow: 2px 2px 10px 5px;
+  padding: 5px;
 }
 
 table {
@@ -184,35 +196,45 @@ table {
 }
 
 .left-cell {
-  border-left:none;
-  border-top:none;
-  border-bottom:none;
-  padding-right:7px;
-  width:145px;
+  border-left: none;
+  border-top: none;
+  border-bottom: none;
+  padding-right: 7px;
+  width: 145px;
 }
-.img-logo{
-  width:145px;
-  border-radius:0;
+.img-logo {
+  width: 145px;
+  border-radius: 0;
   padding-left: 10px;
-
 }
-.social-icons {
-
+img.social {
+  padding-left: 5px;
+  padding-right: 5px;
+  border-left: 1px solid #009ddd;
+  height: 20px;
+}
+img.social-odd {
+  padding-left: 5px;
+  padding-right: 5px;
+  height: 20px;
+}
+.social-logos.outlook {
+  text-align: right;
+}
+.social-logos.outlook img {
+  padding: 0px;
+  border: none;
   display: inline-block;
-  margin-right: 4px;
 }
-img.social{
-  padding-left: 5px;
-  padding-right: 5px;
-  border-left: 1px solid #009DDD;
-  height: 20px;
+.outlook-span {
+  padding: 0px 3px;
+  font-size: 20pt;
+  font-family: "Arial", sans-serif;
+  text-decoration: none;
 }
-img.social-odd{
-  padding-left: 5px;
-  padding-right: 5px;
-  height: 20px;
+.outlook-span.last{
+  padding-right: 0px;
 }
-
 td.description-cell {
   padding: 0 0 0 12px;
   border-left: 0.5px solid #516670;
@@ -226,17 +248,17 @@ td.description-cell table {
 }
 
 td.display-name {
-  color: #009DDD;
+  color: #009ddd;
   font-size: 18px;
   font-weight: bold;
   font-family: AlvarEssentialAlt-SemiBold, sans-serif;
   padding: 0px;
 }
-.smaller{
+.smaller {
   font-size: 16px !important;
   font-weight: bold;
 }
-.smallest{
+.smallest {
   font-size: 14px !important;
   font-weight: bold;
 }
@@ -252,14 +274,14 @@ td.display-position {
 td.display-number {
   padding-bottom: 0px;
   vertical-align: bottom;
-    color: #516670;
+  color: #516670;
   font-size: 12px;
   font-family: AlvarEssentialAlt-Medium, sans-serif;
   padding: 0px;
 }
 
 td.website a {
-  color: #4BAFDB;
+  color: #4bafdb;
   text-decoration: none;
   font-weight: normal;
 
@@ -267,7 +289,7 @@ td.website a {
 }
 
 li.colored {
-  border-left: 0.5px solid #009DDD;
+  border-left: 0.5px solid #009ddd;
   opacity: 1;
   padding-left: 5px;
 }
@@ -278,26 +300,21 @@ li.last {
 
 .CopyPane {
   padding-top: 20px;
-}
-.mail-btn-container{
-  display: flex;
-  margin-top: 15px;
-}
-
-.outlook-btn, .gmail-btn{
   text-align: center;
-  margin: 10px 5px;
-  font-size: 16px;
-  padding: 8px 20px;
+}
+.CopyPane > button {
+  margin-top: 0px;
+  padding: 14px 25px;
+  max-width: 300px;
 }
 
-.instructions{
-  max-width: 800px;
+.instructions {
+  max-width: 650px;
   margin: 10px auto;
   padding: 0px 20px;
 }
 
-h3{
+h3 {
   color: #516670;
 }
 
@@ -309,7 +326,6 @@ ol {
 }
 ol li {
   counter-increment: my-awesome-counter;
-
 }
 ol li::before {
   content: counter(my-awesome-counter) "";
@@ -322,7 +338,7 @@ ol li::before {
   align-content: center;
 }
 
-.screenshot{
+.screenshot {
   width: 400px;
   display: block;
   margin: 20px auto 5px;
