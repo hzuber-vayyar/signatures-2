@@ -297,7 +297,7 @@ function GMAIL_CARD(props) {
                       {position}
                     </span>
                     <br />
-                    <span
+                    {phone.length > 1 && <span
                       style={{
                         fontSize: "12px",
                         color: "#516670",
@@ -312,7 +312,7 @@ function GMAIL_CARD(props) {
                       >
                         {phone}
                       </a>
-                    </span>
+                    </span>}
                   </td>
                 </tr>
               </table>

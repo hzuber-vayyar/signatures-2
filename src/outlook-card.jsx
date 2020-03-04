@@ -122,7 +122,7 @@ function OUTLOOK_CARD(props) {
                 </p>
               </td>
             </tr>
-            <tr style={{height:"18.4pt"}}>
+            {phone.length > 1 && <tr style={{height:"18.4pt"}}>
               <td
                 width="28"
                 valign="top"
@@ -166,8 +166,9 @@ function OUTLOOK_CARD(props) {
                   </span>
                 </p>
               </td>
-            </tr>
-            <tr style={{height:"17.5pt"}}>
+            </tr>}
+
+            {email.length > 1 && <tr style={{height:"17.5pt"}}>
               <td
                 width="28"
                 valign="top"
@@ -210,7 +211,8 @@ function OUTLOOK_CARD(props) {
                   </span>
                 </p>
               </td>
-            </tr>
+            </tr>}
+
             <tr style={{height:"13.0pt" }}>
               <td
                 width="22px"
@@ -235,6 +237,7 @@ function OUTLOOK_CARD(props) {
                   <u></u>
                 </p>
               </td>
+              
               <td
                 width="22px"
                 valign="top"
@@ -306,312 +309,6 @@ function OUTLOOK_CARD(props) {
             </tr>
           </tbody>
         </table>
-
-        {/*<table
-          style={{
-            fontSize: `11pt`,
-            fontFamily: `Arial, sans-serif`,
-            border: "none",
-            padding: `10px !important`
-          }}
-          cellPadding="0"
-          cellSpacing="0"
-          className="outer-table ng-scope"
-        >
-          <tbody>
-            <tr>
-              <td
-                style={{
-                  fontSize: `10pt`,
-                  display: `block !important`,
-                  fontFamily: `Arial, sans-serif`,
-                  verticalAlign: `top`,
-                  padding: `10px 10px 0px 10px`
-                }}
-                valign="top"
-                className="ng-scope"
-              >
-                <a
-                  href="https://vayyar.com"
-                  className="SocialIcon ng-scope"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    alt="Vayyar Logo"
-                    src="https://vayyar.s3.eu-central-1.amazonaws.com/email/vayyar.logo.png"
-                    width="110"
-                  ></img>
-                </a>
-              </td>
-            </tr>
-
-            <tr>
-              <td
-                style={{
-                  color: `#0079ac`,
-                  fontFamily: `Arial, sans-serif`,
-                  padding: `5px 10px`,
-                  verticaAlign: `top`
-                }}
-                valign="top"
-              >
-                <span
-                  style={{
-                    fontSize: size,
-                    fontFamily: `Arial, sans-serif`,
-                    color: `#00ADEE`,
-                    fontWeight: `700`
-                  }}
-                  className="ng-binding"
-                >
-                  {name}
-                </span>
-                <br />
-                <span
-                  className="ng-scope"
-                  style={{
-                    fontWeight: `600`,
-                    fontSize: positionSize,
-                    padding: `2px 0px`,
-                    color: `#516670`
-                  }}
-                >
-                  {position}
-                  <br />
-                </span>
-              </td>
-            </tr>
-            <tr style={{ padding: `0px 10px` }}>
-              <td
-                style={{
-                  width: `100px`,
-                  backgroundColor: `#009ddd`,
-                  height: `1px`,
-                  border: `none`,
-                  marginInlineStart: `unset`,
-                  marginBlockStart: `0px`
-                }}
-              ></td>
-            </tr>
-
-            {phone.length > 1 && (
-              <tr style={{ margin: `5px 0px`, height: `20px` }}>
-                <td  width="20px" height="20px" style={{ padding: `5px 10px 0px`, height: `20px`, width: `20px`}}>
-                  <span
-                    className="ng-scope"
-                    style={{
-                      fontSize: `12.5px`,
-                      verticleAlign: `bottom`
-                    }}
-                    valign="bottom"
-                  >
-                    <img
-                      alt="phone"
-                      ng-src={phoneIcon}
-                      src={phoneIcon}
-                      border="0"
-                      width="19"
-                      valign="bottom"
-                      paddingtop="3px"
-                      style={{
-                        border: `0`,
-                        height: `19px`,
-                        width: `19px`,
-                        verticaAlign: `bottom`,
-                        margin: `0px`,
-                        display: `inline-block`,
-                        paddingTop: `3px`
-                      }}
-                    />
-                  </span>
-                  &nbsp;
-                  <span
-                    style={{
-                      fontSize: `12.5px`,
-                      verticleAlign: `top`,
-                      paddingLeft: `2px`
-                    }}
-                    className="ng-binding"
-                    valign="top"
-                  >
-                    <a
-                        href={phone}
-                        style={{ color: "#222222", textDecoration: "none" }}
-                        textDecoration="none !important"
-                      >
-                        {phone}
-                      </a>
-                  </span>
-                </td>
-              </tr>
-            )}
-
-            {email.length > 1 && (
-              <tr style={{ margin: `0px`, height: `20px` }}>
-                <td valign="middle" height="20px" style={{ padding: `5px 10px`, height: `20px`, width: `20px` }}>
-                  <span
-                    className="ng-scope"
-                    style={{
-                      fontSize: `12.5px`,
-                      verticleAlign: `bottom`, 
-                      height: `20px` 
-                    }}
-                    valign="bottom"
-                    height="20px"
-                  >
-                    <img
-                      alt="email"
-                      ng-src={mailIcon}
-                      src={mailIcon}
-                      border="0"
-                      width="19"
-                      valign="bottom !important"
-                      height="19"
-                      paddingtop="7px"
-                      style={{
-                        border: `0`,
-                        height: `19px`,
-                        width: `19px`,
-                        verticalAlign: `bottom`,
-                        display: `inline-block`,
-                        paddingTop: `7px`
-                      }}
-                    />
-                  </span>
-                  &nbsp;
-                  <span
-                    style={{
-                      fontSize: `12.5px`,
-                      verticleAlign: `middle`,
-                      paddingLeft: `2px`,
-                      paddingBottom:"7px",
-                      height: `20px`
-                    }}
-                    className="ng-binding"
-                    valign="middle"
-                    height="20px"
-                    paddingbottom="7px"
-                  >
-                    <a
-                      href={`mailto:${email}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      textDecoration="none !important"
-                      style={{ color: "#222222", textDecoration: "none", height: `20px`, verticalAlign: `middle`, 
-                      paddingBottom: `7px` }}
-                    >
-                        {email}
-                    </a>
-                  </span>
-                </td>
-              </tr>
-            )}
-
-            <tr style={{ height: `25px` }}>
-              <td
-                style={{
-                  fontSize: `10pt`,
-                  fontFamily: ` Arial, sans-serif`,
-                  padding: `5px 10px 10px 10px`,
-                  verticalAlign: `bottom`,
-                  width: `100px`
-                }}
-                valign="bottom"
-                width="100"
-              >
-                <span className="ng-scope">
-                  <a
-                    href="https://www.facebook.com/vayyarltd/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img
-                      alt="facebook"
-                      ng-src={fbIcon}
-                      src={fbIcon}
-                      border="0"
-                      width="23"
-                      style={{
-                        border: `0`,
-                        height: `23px`,
-                        width: `23px`,
-                        display: `inline-block`
-                      }}
-                    />
-                  </a>
-                  &nbsp;
-                </span>
-                <span className="ng-scope">
-                  <a
-                    href="https://twitter.com/vayyarinc"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img
-                      alt="twitter"
-                      border="0"
-                      width="23"
-                      ng-src={twitterIcon}
-                      src={twitterIcon}
-                      style={{
-                        border: `0`,
-                        height: `23px`,
-                        width: `23px`,
-                        display: `inline-block`
-                      }}
-                    />
-                  </a>
-                  &nbsp;
-                </span>
-                <span className="ng-scope">
-                  <a
-                    href="https://www.instagram.com/vayyar_inc/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img
-                      border="0"
-                      width="23"
-                      alt="instagram"
-                      ng-src={instaIcon}
-                      src={instaIcon}
-                      style={{
-                        border: `0`,
-                        height: `23px`,
-                        width: `23px`,
-                        display: `inline-block`
-                      }}
-                    ></img>
-                  </a>
-                  &nbsp;
-                </span>
-                <span ng-if="showField('linkedinURL')" className="ng-scope">
-                  <a
-                    href="https://www.linkedin.com/company/vayyar/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img
-                      border="0"
-                      width="23"
-                      alt="linkedin"
-                      ng-src={linkedinIcon}
-                      src={linkedinIcon}
-                      style={{
-                        border: `0`,
-                        height: `23px`,
-                        width: `23px`,
-                        display: `inline-block`
-                      }}
-                    />
-                  </a>
-                  &nbsp;
-                </span>
-              </td>
-            </tr>
-          </tbody>
-                    </table>*/}
       </div>
     </>
   );
