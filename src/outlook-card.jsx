@@ -1,11 +1,14 @@
 import React from "react";
-const phoneIcon = require("./phone-icon.jpg");
-const mailIcon = require("./mail-icon.jpg");
+const phoneIcon = require("./phone-icon.png");
+const mailIcon = require("./mail-icon.png");
+const fbIcon = require("./fb-icon.png");
+const twitterIcon = require("./twitter-icon.png");
+const instaIcon = require("./insta-icon.png");
+const linkedinIcon = require("./linkedin-icon.png");
+
 
 function OUTLOOK_CARD(props) {
-  const { name, position } = props;
-  const phone = "M: +972-58-753-8448";
-  const email = "hannah.zuber@vayyar.com";
+  const { name, position, phone, email } = props;
   const length = name.length;
   const size = length < 25 ? "1.2em" : length < 40 ? "1em" : "0.8em";
   const positionSize =
@@ -70,7 +73,7 @@ function OUTLOOK_CARD(props) {
                   }}
                   className="ng-binding"
                 >
-                  Hannah Zuber
+                  {name}
                 </span>
                 <br />
                 <span
@@ -82,7 +85,7 @@ function OUTLOOK_CARD(props) {
                     color: `#516670`
                   }}
                 >
-                  Front End Developer
+                  {position}
                   <br />
                 </span>
               </td>
@@ -207,8 +210,8 @@ function OUTLOOK_CARD(props) {
                   >
                     <img
                       alt="facebook"
-                      ng-src="https://vayyar.s3.eu-central-1.amazonaws.com/email/facebook.png"
-                      src="https://vayyar.s3.eu-central-1.amazonaws.com/email/facebook.png"
+                      ng-src={fbIcon}
+                      src={fbIcon}
                       border="0"
                       width="23"
                       style={{
@@ -230,8 +233,8 @@ function OUTLOOK_CARD(props) {
                       alt="twitter"
                       border="0"
                       width="23"
-                      ng-src="https://vayyar.s3.eu-central-1.amazonaws.com/email/twitter.png"
-                      src="https://vayyar.s3.eu-central-1.amazonaws.com/email/twitter.png"
+                      ng-src={twitterIcon}
+                      src={twitterIcon}
                       style={{
                         border: `0`,
                         height: `23px`,
@@ -251,8 +254,8 @@ function OUTLOOK_CARD(props) {
                       border="0"
                       width="23"
                       alt="instagram"
-                      ng-src="https://vayyar.s3.eu-central-1.amazonaws.com/email/instagram.png"
-                      src="https://vayyar.s3.eu-central-1.amazonaws.com/email/instagram.png"
+                      ng-src={instaIcon}
+                      src={instaIcon}
                       style={{
                         border: `0`,
                         height: `23px`,
@@ -272,8 +275,8 @@ function OUTLOOK_CARD(props) {
                       border="0"
                       width="23"
                       alt="linkedin"
-                      ng-src="https://vayyar.s3.eu-central-1.amazonaws.com/email/linkedin.png"
-                      src="https://vayyar.s3.eu-central-1.amazonaws.com/email/linkedin.png"
+                      ng-src={linkedinIcon}
+                      src={linkedinIcon}
                       style={{
                         border: `0`,
                         height: `23px`,

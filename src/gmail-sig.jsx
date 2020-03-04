@@ -3,114 +3,15 @@ import ReactClipboard from "react-clipboardjs-copy";
 import scrnshot1 from "./scrnshot-settings.webp";
 import scrnshot2 from "./scrnshot-sig.webp";
 import scrnshot3 from "./scrnshot-save.webp";
+import Card from "./gmail-card"
 
 function GMAIL_SIG(props) {
   const { name, phone, position } = props;
-  const length = name.length;
-  const size =
-    length < 25 ? "font-regular" : length < 40 ? "smaller" : "smallest";
 
   return (
     <>
       <div className={`presentational-container gmail`} id="copied">
-        <table role="presentation" className="outer-table">
-          <tbody>
-            <tr className="outer-row">
-              <td
-                cellPadding="0"
-                cellSpacing="0"
-                border="0"
-                valign="middle"
-                className="left-cell"
-              >
-                <a
-                  href="https://vayyar.com"
-                  className="SocialIcon"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    alt="Vayyar Logo"
-                    src="https://vayyar.s3.eu-central-1.amazonaws.com/email/vayyar.logo.png"
-                    className="img-logo"
-                  ></img>
-                </a>
-                <div align="center">
-                  <a
-                    href="https://www.facebook.com/vayyarltd/"
-                    className="SocialIcon"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img
-                      alt="facebook"
-                      src="https://vayyar.s3.eu-central-1.amazonaws.com/email/facebook.png"
-                      className="social-odd"
-                    ></img>
-                  </a>
-                  <a
-                    href="https://twitter.com/vayyarinc"
-                    className="SocialIcon"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img
-                      alt="twitter"
-                      src="https://vayyar.s3.eu-central-1.amazonaws.com/email/twitter.png"
-                      className="social"
-                    ></img>
-                  </a>
-                  <a
-                    href="https://www.linkedin.com/company/vayyar/"
-                    className="SocialIcon"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img
-                      alt="linkedin"
-                      src="https://vayyar.s3.eu-central-1.amazonaws.com/email/linkedin.png"
-                      className="social"
-                    ></img>
-                  </a>
-                  <a
-                    href="https://www.instagram.com/vayyar_inc/"
-                    className="SocialIcon"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img
-                      alt="instagram"
-                      src="https://vayyar.s3.eu-central-1.amazonaws.com/email/instagram.png"
-                      className="social"
-                    ></img>
-                  </a>
-                </div>
-              </td>
-              <td className="description-cell">
-                <table role="presentation">
-                  <tbody>
-                    <tr>
-                      <td colSpan="2" className={`display-name ${size}`}>
-                        {name}
-                      </td>
-                    </tr>
-                    <tr>
-                      <td colSpan="2" className="display-position">
-                        {position}&nbsp;
-                      </td>
-                    </tr>
-                    <tr>
-                      <td className="display-number">
-                        {phone}
-                        &nbsp;
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+        <Card phone={phone} name={name} position={position}/>
       </div>
       <div className="CopyPane">
         <ReactClipboard

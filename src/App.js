@@ -152,7 +152,7 @@ class App extends Component {
             <Gmail
               phone={number.length > 7 ? "M: +972-" + displayNumber : ""}
               name={toTitleCase(this.state.name)}
-              position={toTitleCase(this.state.position)}
+              position={this.state.position}
               email={this.state.email}
             />
           </div>
@@ -160,9 +160,9 @@ class App extends Component {
         {this.state.outlook && (
           <div className={showCard}>
             <Outlook
-              phone={number.length > 7 ? "M: +972-" + displayNumber : ""}
+              phone={number.length > 7 ? "+972-" + displayNumber : ""}
               name={toTitleCase(this.state.name)}
-              position={toTitleCase(this.state.position)}
+              position={this.state.position}
               email={this.state.email}
             />
           </div>
