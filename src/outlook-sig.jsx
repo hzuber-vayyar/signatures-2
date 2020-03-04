@@ -3,8 +3,8 @@ import ReactClipboard from "react-clipboardjs-copy";
 import outlook1 from "./outlook-options.png";
 import outlook2 from "./outlook-signature.PNG";
 import outlook3 from "./outlook-new-sig.PNG";
-import outlook4 from "./outlook-name-sig.webp";
-import outlook5 from "./outlook-type-sig.webp";
+import outlook4 from "./outlook-name-sig.PNG";
+import outlook5 from "./outlook-type-sig.PNG";
 import Card from "./outlook-card";
 
 function OUTLOOK_SIG(props) {
@@ -74,7 +74,7 @@ function OUTLOOK_SIG(props) {
           <li>
             <p>
               In the Signatures and Stationery dialog box, in the Edit signature
-              field, paste your signature. Click OK.
+              field, paste your signature. It might look a bit different from the signature you copied, but don't change anything until you've seen it in an actual email. Click OK.
             </p>
             <img
               src={outlook5}

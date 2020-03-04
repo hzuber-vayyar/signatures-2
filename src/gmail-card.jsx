@@ -1,13 +1,7 @@
 import React from "react";
-const phoneIcon = require("./phone-icon.png");
-const mailIcon = require("./mail-icon.png");
-const fbIcon = require("./fb-icon.png");
-const twitterIcon = require("./twitter-icon.png");
-const instaIcon = require("./insta-icon.png");
-const linkedinIcon = require("./linkedin-icon.png");
 
 function GMAIL_CARD(props) {
-  const { name, position, phone, email } = props;
+  const { name, position, phone } = props;
   const length = name.length;
   const size = length < 25 ? "1.2em" : length < 40 ? "1em" : "0.8em";
   const positionSize =
@@ -281,7 +275,16 @@ function GMAIL_CARD(props) {
                       msoLineHeightRule: "exactly"
                     }}
                   >
-                    {name}
+                    <span
+                      style={{
+                        fontSize: size,
+                        color: "#009DDD",
+                        fontWeight: "bold"
+                      }}
+                    >
+                      {name}
+                    </span>
+
                     <br />
                     <span
                       style={{
