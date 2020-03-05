@@ -6,12 +6,12 @@ import scrnshot3 from "./scrnshot-save.webp";
 import Card from "./gmail-card"
 
 function GMAIL_SIG(props) {
-  const { name, phone, position } = props;
+  const { name, phone, position, number } = props;
 
   return (
     <>
       <div className={`presentational-container gmail`} id="copied">
-        <Card phone={phone} name={name} position={position}/>
+        <Card phone={phone} name={name} position={position} number={number}/>
       </div>
       <div className="CopyPane">
         <ReactClipboard

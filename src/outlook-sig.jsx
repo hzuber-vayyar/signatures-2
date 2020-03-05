@@ -8,12 +8,12 @@ import outlook5 from "./outlook-type-sig.PNG";
 import Card from "./outlook-card";
 
 function OUTLOOK_SIG(props) {
-  const { name, phone, position, email } = props;
+  const { name, phone, position, email, number } = props;
 
   return (
     <>
       <div className={`presentational-container outlook`} id="copied">
-        <Card name={name} phone={phone} position={position} email={email} />
+        <Card name={name} phone={phone} position={position} email={email} number={number} />
       </div>
       <div className="CopyPane">
         <ReactClipboard

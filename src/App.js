@@ -11,6 +11,7 @@ class App extends Component {
       position: "",
       phone: "",
       email: "",
+      countryCode: "+972",
       submitted: false,
       gmail: false,
       outlook: false
@@ -101,16 +102,29 @@ class App extends Component {
                 onChange={e => this.handleChange(e)}
               />
             </label>
-            <label htmlFor="phone">
+            <label htmlFor="phone" className="phone-label">
               <span>Phone Number:</span>
-              <input
-                type="text"
-                className="input-field"
-                id="phone"
-                placeholder="Example: 58-5551234"
-                value={this.state.number}
-                onChange={e => this.handleChange(e)}
-              />
+              <div className="number-wrapper">
+                <select
+                  id="countryCode"
+                  name="countryCode"
+                  className="input-field country"
+                  onChange={e => this.handleChange(e)}
+                  defaultValue="+972"
+                >
+                  <option value="+972">+972</option>
+                  <option value="+1">+001</option>
+                  <option value="+46">+046</option>
+                </select>
+                <input
+                  type="text"
+                  className="input-field phone"
+                  id="phone"
+                  placeholder="Example: 58-5551234"
+                  value={this.state.number}
+                  onChange={e => this.handleChange(e)}
+                />
+              </div>
             </label>
             <label htmlFor="email">
               <span>Email address:</span>
@@ -150,20 +164,22 @@ class App extends Component {
         {this.state.gmail && (
           <div className={showCard}>
             <Gmail
-              phone={number.length > 7 ? "M: +972-" + displayNumber : ""}
+              phone={number.length > 7 ? "M: " + this.state.countryCode + "-" + displayNumber : ""}
               name={toTitleCase(this.state.name)}
               position={this.state.position}
               email={this.state.email}
+              number={this.state.countryCode + numberNoDashes}
             />
           </div>
         )}
         {this.state.outlook && (
           <div className={showCard}>
             <Outlook
-              phone={number.length > 7 ? "+972-" + displayNumber : ""}
+              phone={number.length > 7 ? this.state.countryCode + "-" + displayNumber : ""}
               name={toTitleCase(this.state.name)}
               position={this.state.position}
               email={this.state.email}
+              number={this.state.countryCode + numberNoDashes}
             />
           </div>
         )}

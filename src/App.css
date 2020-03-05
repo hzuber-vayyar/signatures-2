@@ -86,28 +86,31 @@ form {
   height: 100px;
   width: 80%;
 }
-/** End of Form Style from sanwebe.com */
 
-/* label{
-  padding: 10px 0px;
-  font-size: 18px;
+.phone-label{
+  display: flex !important;
+  flex-direction: column;
 }
-input[type="text"]{
-  margin: 10px 0px 10px 10px;
-  align-self: right;
-  padding: 5px;
-  border-radius: 5px;
-  border: 1px solid rgb(165, 164, 164);
+.number-wrapper{
+  display: flex;
 }
-#name{
-  width: 252px;
+.input-field.country{
+  width: 75px;
+  margin-right: 5px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  border: 1px solid #c2c2c2;
+  box-shadow: 1px 1px 4px #ebebeb;
+  -moz-box-shadow: 1px 1px 4px #ebebeb;
+  -webkit-box-shadow: 1px 1px 4px #ebebeb;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  padding: 6px;
+  outline: none;
 }
-#position{
-  width: 236px;
-}
-#phone{
-  width: 178px;
-} */
+
 .submit-btn {
   text-align: center;
   margin: 0px 5px;

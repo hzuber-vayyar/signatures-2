@@ -1,7 +1,7 @@
 import React from "react";
 
 function GMAIL_CARD(props) {
-  const { name, position, phone } = props;
+  const { name, position, phone, number } = props;
   const length = name.length;
   const size = length < 25 ? "1.2em" : length < 40 ? "1em" : "0.8em";
   const positionSize =
@@ -307,7 +307,7 @@ function GMAIL_CARD(props) {
                       }}
                     >
                       <a
-                        href={phone}
+                        href={number}
                         style={{ color: "#000000", textDecoration: "none" }}
                       >
                         {phone}
