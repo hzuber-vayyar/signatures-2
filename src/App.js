@@ -76,7 +76,7 @@ class App extends Component {
         }
         <div className="form-style-2">
           <div className="form-style-2-heading">
-            Fill in your information below, and click "Submit"
+            Fill in your information below
           </div>
           <form onSubmit={e => this.handleSubmit(e)}>
             <label htmlFor="name">
