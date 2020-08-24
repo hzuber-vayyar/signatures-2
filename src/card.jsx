@@ -3,7 +3,7 @@ import React from "react";
 function OUTLOOK_CARD(props) {
   const { name, position, phone, email } = props;
   const length = name.length;
-  const size = length < 25 ? "100%" : length < 40 ? "90%" : "80%";
+  const size = length < 25 ? "110%" : length < 40 ? "100%" : "90%";
   const positionSize =
     position.length < 25 ? "80%" : length < 40 ? "75%" : "70%";
   return (
@@ -17,7 +17,7 @@ function OUTLOOK_CARD(props) {
           style={{
             borderCollapse: "collapse",
             border: "none",
-            font: `16px "Century Gothic", sans-serif`,
+            font: `18px "Century Gothic", sans-serif`,
             height: "115px",
           }}
         >
@@ -57,10 +57,19 @@ function OUTLOOK_CARD(props) {
                   <tbody>
                     <tr
                       height="13pt"
-                      style={{ fontSize: size, color: "#009DDD" }}
+                      style={{
+                        fontSize: size,
+                        color: "#009DDD",
+                        fontWeight: "900",
+                      }}
                     >
-                      <td style={{ padding: "5px 0 0" }}>
-                        <b>{name}</b>
+                      <td
+                        style={{
+                          padding: "5px 0 0",
+                          fontFamily: "Century Gothic",
+                        }}
+                      >
+                        {name}
                       </td>
                     </tr>
                     <tr>
@@ -69,6 +78,8 @@ function OUTLOOK_CARD(props) {
                           fontSize: positionSize,
                           color: "#7d7c7c",
                           paddingBottom: "5px",
+                          fontWeight: "bolder",
+                          fontFamily: "Century Gothic",
                         }}
                       >
                         {position}
@@ -81,6 +92,7 @@ function OUTLOOK_CARD(props) {
                           fontSize: "70%",
                           color: "#7d7c7c",
                           textDecoration: "none",
+                          fontFamily: "Century Gothic",
                         }}
                       >
                         <td>
@@ -103,14 +115,15 @@ function OUTLOOK_CARD(props) {
                     )}
                     {email.length > 1 && (
                       <tr
-                        height="70%"
+                        height="12pt"
                         style={{
-                          fontSize: "10.0pt",
+                          fontSize: "70%",
                           color: "#7d7c7c",
                           textDecoration: "none",
                         }}
                       >
-                        <td>
+                        <td style={{
+                          fontFamily: "Century Gothic"}}>
                           <b>E</b> &nbsp;&nbsp;
                           <a
                             href={`mailto:${email}`}
@@ -129,7 +142,8 @@ function OUTLOOK_CARD(props) {
                       </tr>
                     )}
                     <tr height="13pt">
-                      <td style={{ padding: "5pt 0 2pt" }}>
+                      <td style={{ padding: "5pt 0 2pt",
+                          fontFamily: "Century Gothic" }}>
                         <a
                           href="https://www.facebook.com/vayyarltd"
                           target="_blank"
