@@ -3,22 +3,28 @@ import ReactClipboard from "react-clipboardjs-copy";
 import scrnshot1 from "./scrnshot-settings.webp";
 import scrnshot2 from "./scrnshot-sig.webp";
 import scrnshot3 from "./scrnshot-save.webp";
-import Card from "./gmail-card"
+import Card from "./card";
 
 function GMAIL_SIG(props) {
-  const { name, phone, position, number } = props;
+  const { name, phone, position, number, email } = props;
 
   return (
     <>
-      <div className={`presentational-container gmail`} id="copied">
-        <Card phone={phone} name={name} position={position} number={number}/>
+      <div className="presentational-container gmail">
+        <Card
+          phone={phone}
+          name={name}
+          position={position}
+          number={number}
+          email={email}
+        />
       </div>
       <div className="CopyPane">
         <ReactClipboard
-          target={".presentational-container.gmail"}
+          target={".presentational-container.card"}
           selection={true}
-          onSuccess={e => console.log(e)}
-          onError={e => console.log(e)}
+          onSuccess={(e) => console.log(e)}
+          onError={(e) => console.log(e)}
           className={` submit-btn `}
         >
           <button>Copy to Clipboard</button>

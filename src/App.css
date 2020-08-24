@@ -1,5 +1,40 @@
+
+@font-face {
+  font-family: "Alvar Black";
+  src: url("./fonts/AlvarEssentialAlt-Black.woff2") format("woff2"),
+    url("./fonts/AlvarEssentialAlt-Black.woff") format("woff");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Alvar Bold";
+  src: url("./fonts/AlvarEssentialAlt-Bold.woff2") format("woff2"),
+    url("./fonts/AlvarEssentialAlt-Bold.woff") format("woff");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Alvar Medium";
+  src: url("./fonts/AlvarEssentialAlt-Medium.woff2") format("woff2"),
+    url("./fonts/AlvarEssentialAlt-Medium.woff") format("woff");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Alvar Light";
+  src: url("./fonts/AlvarEssentialAlt-Light.woff2") format("woff2"),
+    url("./fonts/AlvarEssentialAlt-Light.woff") format("woff");
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  font: 100% "Alvar Medium", sans-serif;
+}
 .App-header {
-  background-color: #282c34;
+  background-color: #455157;
   min-height: 10vh;
   display: flex;
   flex-direction: column;
@@ -27,14 +62,15 @@ form {
 .form-style-2 {
   max-width: 800px;
   padding: 20px 12px 10px 20px;
-  font: 13px Arial, Helvetica, sans-serif;
+  font-size: 15px;
 }
 .form-style-2-heading {
-  font-weight: bold;
+  font-weight: 600;
   border-bottom: 2px solid #ddd;
-  margin-bottom: 20px;
-  font-size: 15px;
+  margin-bottom: 0;
+  font-size: 18px;
   padding-bottom: 3px;
+  color: #516670;
 }
 .form-style-2 label {
   display: block;
@@ -42,11 +78,14 @@ form {
 }
 .form-style-2 label > span {
   width: 300px;
-  font-weight: bold;
+  font-weight: 600;
   float: left;
   padding-top: 8px;
   padding-right: 5px;
   margin-bottom: 5px;
+  font-size: 17px;
+  color: #516670;
+
 }
 .form-style-2 span.required {
   color: red;
@@ -58,6 +97,7 @@ form {
 .form-style-2 input.input-field,
 .form-style-2 .select-field {
   width: 100%;
+  font:  100% "Alvar Medium", sans-serif;
 }
 .form-style-2 input.input-field,
 .form-style-2 .tel-number-field,
@@ -70,10 +110,10 @@ form {
   box-shadow: 1px 1px 4px #ebebeb;
   -moz-box-shadow: 1px 1px 4px #ebebeb;
   -webkit-box-shadow: 1px 1px 4px #ebebeb;
-  border-radius: 3px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  padding: 7px;
+  border-radius: 23px;
+  -webkit-border-radius: 23px;
+  -moz-border-radius: 23px;
+  padding: 8px 13px ;
   outline: none;
 }
 .form-style-2 .input-field:focus,
@@ -104,11 +144,12 @@ form {
   box-shadow: 1px 1px 4px #ebebeb;
   -moz-box-shadow: 1px 1px 4px #ebebeb;
   -webkit-box-shadow: 1px 1px 4px #ebebeb;
-  border-radius: 3px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  padding: 6px;
+  border-radius: 23px;
+  -webkit-border-radius: 23px;
+  -moz-border-radius: 23px;
+  padding: 6px 8px 6px 6px;
   outline: none;
+  font:  100% "Alvar Medium", sans-serif;
 }
 
 .submit-btn {
@@ -163,18 +204,7 @@ form {
 /**
 Beginning of signature CSS
 **/
-@import url("https://vayyar.s3.eu-central-1.amazonaws.com/alvaressentialalt-medium-webfont.woff");
-@import url("https://vayyar.s3.eu-central-1.amazonaws.com/alvaressentialalt-semiboldit-webfont.woff");
 
-@font-face {
-  font-family: AlvarEssentialAlt-Medium;
-  src: url("https://vayyar.s3.eu-central-1.amazonaws.com/alvaressentialalt-medium-webfont.woff");
-}
-
-@font-face {
-  font-family: AlvarEssentialAlt-SemiBold;
-  src: url("https://vayyar.s3.eu-central-1.amazonaws.com/alvaressentialalt-semiboldit-webfont.woff");
-}
 
 .presentational-container {
   padding: 0px;

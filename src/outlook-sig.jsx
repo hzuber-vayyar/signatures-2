@@ -5,19 +5,19 @@ import outlook2 from "./outlook-signature.PNG";
 import outlook3 from "./outlook-new-sig.PNG";
 import outlook4 from "./outlook-name-sig.PNG";
 import outlook5 from "./outlook-type-sig.PNG";
-import Card from "./outlook-card";
+import Card from "./card";
 
 function OUTLOOK_SIG(props) {
   const { name, phone, position, email, number } = props;
 
   return (
     <>
-      <div className={`presentational-container outlook`} id="copied">
+      <div className={`presentational-container outlook`}>
         <Card name={name} phone={phone} position={position} email={email} number={number} />
       </div>
       <div className="CopyPane">
         <ReactClipboard
-          target={".presentational-container.outlook"}
+          target={".presentational-container.card"}
           selection={true}
           onSuccess={e => console.log(e)}
           onError={e => console.log(e)}

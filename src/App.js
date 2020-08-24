@@ -132,7 +132,7 @@ class App extends Component {
                 type="text"
                 className="input-field"
                 id="email"
-                placeholder="johnny.vayyaroni@vayyar.com:"
+                placeholder="johnny.vayyaroni@vayyar.com"
                 value={this.state.email}
                 onChange={e => this.handleChange(e)}
               />
@@ -158,13 +158,20 @@ class App extends Component {
           </form>
         </div>
 
+       { /*<NewOutlook
+          phone="+972-58-753-8448"
+          name="Hannah Zuber"
+          position="Front End Developer"
+          email="hannah.zuber@vayyar.com"
+        />*/}
+
         {
           //* Begining of Presentational Container */
         }
         {this.state.gmail && (
           <div className={showCard}>
             <Gmail
-              phone={number.length > 7 ? "M: " + this.state.countryCode + "-" + displayNumber : ""}
+              phone={number.length > 7 ? this.state.countryCode + "-" + displayNumber : ""}
               name={toTitleCase(this.state.name)}
               position={this.state.position}
               email={this.state.email}
