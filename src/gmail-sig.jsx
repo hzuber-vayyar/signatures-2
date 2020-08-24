@@ -10,7 +10,7 @@ function GMAIL_SIG(props) {
 
   return (
     <>
-      <div className="presentational-container gmail">
+      <div className="website-container gmail">
         <Card
           phone={phone}
           name={name}

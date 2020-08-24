@@ -12,7 +12,7 @@ function OUTLOOK_SIG(props) {
 
   return (
     <>
-      <div className={`presentational-container outlook`}>
+      <div className={`website-container outlook`}>
         <Card name={name} phone={phone} position={position} email={email} number={number} />
       </div>
       <div className="CopyPane">
