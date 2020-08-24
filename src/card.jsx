@@ -74,50 +74,60 @@ function OUTLOOK_CARD(props) {
                         {position}
                       </td>
                     </tr>
-                    <tr
-                      height="12pt"
-                      style={{
-                        fontSize: "70%",
-                        color: "#7d7c7c",
-                        textDecoration: "none",
-                      }}
-                    >
-                      <td>
-                        <b>M</b>&nbsp;&nbsp;
-                        <a
-                          href={`tel:${phone}`}
-                          style={{ color: "#7d7c7c", textDecoration: "none" }}
-                        >
-                          <span
+                    {phone.length > 1 && (
+                      <tr
+                        height="12pt"
+                        style={{
+                          fontSize: "70%",
+                          color: "#7d7c7c",
+                          textDecoration: "none",
+                        }}
+                      >
+                        <td>
+                          <b>M</b>&nbsp;&nbsp;
+                          <a
+                            href={`tel:${phone}`}
                             style={{ color: "#7d7c7c", textDecoration: "none" }}
                           >
-                            {phone}
-                          </span>
-                        </a>
-                      </td>
-                    </tr>
-                    <tr
-                      height="70%"
-                      style={{
-                        fontSize: "10.0pt",
-                        color: "#7d7c7c",
-                        textDecoration: "none",
-                      }}
-                    >
-                      <td>
-                        <b>E</b> &nbsp;&nbsp;
-                        <a
-                          href={`mailto:${email}`}
-                          style={{ color: "#7d7c7c", textDecoration: "none" }}
-                        >
-                          <span
+                            <span
+                              style={{
+                                color: "#7d7c7c",
+                                textDecoration: "none",
+                              }}
+                            >
+                              {phone}
+                            </span>
+                          </a>
+                        </td>
+                      </tr>
+                    )}
+                    {email.length > 1 && (
+                      <tr
+                        height="70%"
+                        style={{
+                          fontSize: "10.0pt",
+                          color: "#7d7c7c",
+                          textDecoration: "none",
+                        }}
+                      >
+                        <td>
+                          <b>E</b> &nbsp;&nbsp;
+                          <a
+                            href={`mailto:${email}`}
                             style={{ color: "#7d7c7c", textDecoration: "none" }}
                           >
-                            {email}
-                          </span>
-                        </a>
-                      </td>
-                    </tr>
+                            <span
+                              style={{
+                                color: "#7d7c7c",
+                                textDecoration: "none",
+                              }}
+                            >
+                              {email}
+                            </span>
+                          </a>
+                        </td>
+                      </tr>
+                    )}
                     <tr height="13pt">
                       <td style={{ padding: "5pt 0 2pt" }}>
                         <a
