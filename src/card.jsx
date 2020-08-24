@@ -3,9 +3,9 @@ import React from "react";
 function OUTLOOK_CARD(props) {
   const { name, position, phone, email } = props;
   const length = name.length;
-  const size = length < 25 ? "1.2em" : length < 40 ? "1em" : "0.8em";
+  const size = length < 25 ? "100%" : length < 40 ? "90%" : "80%";
   const positionSize =
-    position.length < 25 ? "0.9em" : length < 40 ? "0.8em" : "0.7em";
+    position.length < 25 ? "80%" : length < 40 ? "75%" : "70%";
   return (
     <>
       <div className={`presentational-container card`}>
@@ -77,13 +77,13 @@ function OUTLOOK_CARD(props) {
                     <tr
                       height="12pt"
                       style={{
-                        fontSize: "10.0pt",
+                        fontSize: "70%",
                         color: "#7d7c7c",
                         textDecoration: "none",
                       }}
                     >
                       <td>
-                        <b>M</b> &nbsp;
+                        <b>M</b>&nbsp;&nbsp;
                         <a
                           href={`tel:${phone}`}
                           style={{ color: "#7d7c7c", textDecoration: "none" }}
@@ -97,7 +97,7 @@ function OUTLOOK_CARD(props) {
                       </td>
                     </tr>
                     <tr
-                      height="12pt"
+                      height="70%"
                       style={{
                         fontSize: "10.0pt",
                         color: "#7d7c7c",
@@ -105,7 +105,7 @@ function OUTLOOK_CARD(props) {
                       }}
                     >
                       <td>
-                        <b>E</b> &nbsp;&nbsp;{" "}
+                        <b>E</b> &nbsp;&nbsp;
                         <a
                           href={`mailto:${email}`}
                           style={{ color: "#7d7c7c", textDecoration: "none" }}
