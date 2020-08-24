@@ -1,9 +1,4 @@
 import React from "react";
-import logo from "./vayyar-logo.png";
-import fbIcon from "./fb-icon.png";
-import instaIcon from "./insta-icon.png";
-import linkedinIcon from "./linkedin-icon.png";
-import twitterIcon from "./twitter-icon.png";
 
 function OUTLOOK_CARD(props) {
   const { name, position, phone, email } = props;
